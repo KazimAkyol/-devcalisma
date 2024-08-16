@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÖdevCalisma</title>
+</head>
+<body>
+    <h1>ABC Tasarim Programi Kurulum ve Satis Söylesmesi</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Sözlesme Onayi</legend>
+            <input type="checkbox" name="name" id="onay" value="1" required>
+            <label for="onay">Asagidaki Bilgilerin dogrulugunu kabul ediyorum ve sözlesmesini onayliyorum.</label>
+            <br>
+            <input type="submit" id="fkaydet" name="fkaydet" value="Formu kaydet">
+            <input type="reset" id="ftemizle" name="ftemizle" value="Formu Temizle">
+        </fieldset>
+        <fieldset>
+            <legend>Kisisel Bilgiler</legend>
+            <table>
+                <tr>
+                    <td>Form Güvenlik ID</td>
+                    <td>
+                    <input type="text" id="fgvnid" name="fgvnid" value="asdfgh">
+                    <input type="hidden" id="gizle" name="gizle" value="asdfgh">
+                </td>
+                </tr>
+                <tr>
+                    <td>Ad</td>
+                    <td> <input type="text" name="ad" id="ad" required></td>
+                </tr>
+                <tr>
+                    <td>Soyad</td>
+                    <td> <input type="text" name="soyad" id="soyad" required></td>
+                </tr>
+                <tr>
+                    <td>Yas</td>
+                    <td>
+                        <input type="number" min="18" max="70">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mail Adresi</td>
+                    <td>
+                        <input type="email" id="eposta" name="eposta">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fotograf Ekle</td>
+                    <td> <input type="file" id="dosya" name="dosya">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <div>
+            <fieldset>
+                <legend>Diger Bilgiler</legend>
+                <table>
+                    <tr>
+                        <th colspan="2">
+                            Buradaki Alanlar Meslek Deneyimini Kapsar</th>
+                    </tr>
+                    <tr>
+                        <td>Sektöre Giris Tarihi</td>
+                        <td>
+                            <input type="date" id="tarih" name="tarih">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sektör Deneyimi</td>
+                        <td>
+                            <label for="">
+                                <input type="radio" id="Belirli Aralik_1" name="yillar" value="1"> 1-5 yil
+                            </label>
+                            <br>
+                            <label for="">
+                                <input type="radio" id="Belirli Aralik_2" name="yillar" value="1"> 6-10 yil
+                            </label>
+                            <br>
+                            <label for="">
+                                <input type="radio" id="Belirli Aralik_3" name="yillar" value="1"> 11-15 yil
+                            </label>
+                            <br>
+                            <label for="">
+                                <input type="radio" id="Belirli Aralik_4" name="yillar" value="1"> 15-üzeri
+                            </label>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Programlama Dilleri</td>
+                        <td>
+                            <select name="pdilleri" id="pdilleri" size="4" multiple>
+                                <option value="C#">C#</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Java">Java</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="React">React</option>
+                                <option value="Node.JS">Node.JS</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Sözlesme Kopyasi</legend>
+                <textarea readonly cols="35" rows="7" name="skopyasi" id="skopyasi">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, autem. Necessitatibus nobis repudiandae dignissimos culpa libero veniam laborum illum reprehenderit at reiciendis? Est tempore, ipsum, nostrum nesciunt qui necessitatibus fuga harum optio architecto delectus illo aliquam vitae expedita aut repellat cum sed quam. Ad sed iure natus ut, deserunt accusantium nam rerum tenetur ipsa rem amet cum modi, officia error sunt consequuntur! Corrupti praesentium, obcaecati iusto odio adipisci fugiat aliquid at, nulla et rerum iure animi sunt dolore voluptas quisquam a sint doloremque nostrum dignissimos cum officia mollitia accusamus vero vitae? Aperiam itaque reprehenderit placeat?</textarea>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Mail Listesi</legend>
+                Mail listesine katilmak <b>istiyorum</b>
+                <input type="radio" id="mliste" name="mliste" checked>
+                <br>
+                Mail listesine katilmak <b><ins>istemiyorum</ins></b>
+                <input type="radio" id="mliste1" name="mliste1">
+            </fieldset>
+        </div>
+    </form>
+    
+</body>
+</html>
